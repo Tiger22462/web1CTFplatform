@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/answer', (req, res) => {
-  res.sendFile(path.join(__dirname, 'movie.html'));
+  res.sendFile(path.join(__dirname, 'movie.html')); //check
 });
 
 app.get('/cinema', (req, res) => {
-  res.redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley&autoplay=1');
+  res.redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley&autoplay=1'); //check
 });
 
 app.get('/board', (req, res) => {
