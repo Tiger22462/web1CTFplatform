@@ -5,7 +5,7 @@ const path = require('path');
 const port = 80;
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));  //check
 });
 
 app.get('/answer', (req, res) => {
@@ -13,15 +13,15 @@ app.get('/answer', (req, res) => {
 });
 
 app.get('/cinema', (req, res) => {
-  res.sendFile(path.join(__dirname, 'rickroll.html'));
+  res.redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley&autoplay=1');
 });
 
 app.get('/board', (req, res) => {
-  res.sendFile(path.join(__dirname, 'picture.html'));
+  res.sendFile(path.join(__dirname, 'picture.html')); //only picture set up
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'rainbow.html'));
+  res.sendFile(path.join(__dirname, 'rainbow.html')); //check
 });
 
 app.use((req, res, next) => {
